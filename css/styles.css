@@ -24,9 +24,11 @@
     border-color: #c03421;
     color: #ca4634;
 }
-.img-fluid{
+
+.img-fluid {
     width: 50vh;
 }
+
 p {
     line-height: 2;
 }

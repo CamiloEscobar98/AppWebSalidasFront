@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio/Director</title>
+    <title>Inicio/Actividades</title>
     <!-- Bootstrap 4 -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -40,12 +40,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="misactividades.html">Mis Actividades</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="lista_estudiantes.html">Estudiantes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="lista_docentes.html">Docentes</a>
-                </li>
             </ul>
             <a href="../login.html" class="btn btn-appsalidas">Cerrar Sesión</a>
         </div>
@@ -53,12 +47,12 @@
     <div class="container-fluid content-body">
         <div class="row">
             <div class="col-12 bg-appsalidas">
-                <h2 class="py-2 font-weight-bolder text-center text-white">Director del Programa</h2>
+                <h2 class="py-2 font-weight-bolder text-center text-white">Estudiante</h2>
             </div>
         </div>
         <div class="row">
             <div class="col-12">
-                <h2 class="mt-4 font-weight-bolder text-right text-danger">Todas las Actividades</h2>
+                <h2 class="mt-4 font-weight-bolder text-right text-danger">Mis Actividades</h2>
             </div>
         </div>
         <div class="row my-4">
@@ -82,8 +76,8 @@
                         <h6>Capacidad</h6>50
                         <br>
                         <div class="btn-group w-100 mt-4">
-                            <a href="actividad.html" type="button" class="btn btn-primary">Ver</a>
-                            <button type="button" class="btn btn-danger">Eliminar</button>
+                            <button type="button" class="btn btn-primary">Ver</button>
+                            <button type="button" class="btn btn-danger">Desertar</button>
                         </div>
                     </div>
                     <div class="card-footer bg-appsalidas py-4"></div>
@@ -110,7 +104,7 @@
                         <br>
                         <div class="btn-group w-100 mt-4">
                             <button type="button" class="btn btn-primary">Ver</button>
-                            <button type="button" class="btn btn-danger">Eliminar</button>
+                            <button type="button" class="btn btn-danger">Desertar</button>
                         </div>
                     </div>
                     <div class="card-footer bg-appsalidas py-4"></div>
@@ -137,7 +131,7 @@
                         <br>
                         <div class="btn-group w-100 mt-4">
                             <button type="button" class="btn btn-primary">Ver</button>
-                            <button type="button" class="btn btn-danger">Eliminar</button>
+                            <button type="button" class="btn btn-danger">Desertar</button>
                         </div>
                     </div>
                     <div class="card-footer bg-appsalidas py-4"></div>
@@ -166,7 +160,7 @@
                         <br>
                         <div class="btn-group w-100 mt-4">
                             <button type="button" class="btn btn-primary">Ver</button>
-                            <button type="button" class="btn btn-danger">Eliminar</button>
+                            <button type="button" class="btn btn-danger">Desertar</button>
                         </div>
                     </div>
                     <div class="card-footer bg-appsalidas py-4"></div>
@@ -193,7 +187,7 @@
                         <br>
                         <div class="btn-group w-100 mt-4">
                             <button type="button" class="btn btn-primary">Ver</button>
-                            <button type="button" class="btn btn-danger">Eliminar</button>
+                            <button type="button" class="btn btn-danger">Desertar</button>
                         </div>
                     </div>
                     <div class="card-footer bg-appsalidas py-4"></div>
@@ -220,10 +214,54 @@
                         <br>
                         <div class="btn-group w-100 mt-4">
                             <button type="button" class="btn btn-primary">Ver</button>
-                            <button type="button" class="btn btn-danger">Eliminar</button>
+                            <button type="button" class="btn btn-danger">Desertar</button>
                         </div>
                     </div>
                     <div class="card-footer bg-appsalidas py-4"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Registrar Actividad -->
+        <div class="modal fade" id="registrar_actividad">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header bg-appsalidas">
+
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <h4 class="modal-title text-center">Registrar Actividad</h4>
+                        <form action="/action_page.php" class="my-4">
+                            <div class="form-group">
+                                <label class="font-weight-bold">Titulo de la Actividad</label>
+                                <input type="text" class="form-control"
+                                    placeholder="Ingrese un titulo para la actividad">
+                            </div>
+                            <div class="form-group">
+                                <label class="font-weight-bold">Descripción de la Actividad</label>
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label class="font-weight-bold">Capacidad de la Actividad</label>
+                                <input type="number" class="form-control" aria-describedby="helpId">
+                            </div>
+                            <div class="form-group">
+                                <label class="font-weight-bold">Privacidad de la Actividad</label>
+                                <select class="form-control">
+                                    <option selected>Eliga una opción</option>
+                                    <option>Pública</option>
+                                    <option>Privada</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer bg-appsalidas">
+                        <button type="button" class="btn btn-appsalidas" data-dismiss="modal">Cancelar</button>
+                    </div>
+
                 </div>
             </div>
         </div>
