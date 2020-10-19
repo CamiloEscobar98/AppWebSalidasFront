@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio/Director</title>
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Mis estilos -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row py-3 bg-appsalidas">
+            <div class="col-12 col-sm-12 col-md-4 my-auto">
+                <img class="img-fluid" src="../../images/portada.png" alt="Chania">
+            </div>
+            <div class="col-12 col-sm-12 col-md-8 my-auto">
+                <h1 class="text-center font-weight-bolder">Programa de Ingeniería de Sistemas</h1>
+                <h6 class="text-center font-weight-bolder">Universidad Francisco de Paula Santander</h6>
+            </div>
+        </div>
+    </div>
+    <!-- Navegador -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="../index.html">Inicio</a>
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Integrantes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">¿Quiénes somos?</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid content-body">
+        <div class="row">
+            <div class="col-12 bg-appsalidas">
+                <h2 class="py-2 font-weight-bolder text-center text-white">Aplicación Web Salidas</h2>
+            </div>
+        </div>
+        <div class="row my-4">
+            <div class="col-12 col-sm-12 col-md-4">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-appsalidas">
+                        <h5 class="text-center font-weight-bold">Estudiante</h5>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-title text-center">Por favor llena tus credenciales.</h6>
+                        <form>
+                            <div class="form-group py-3">
+                                <label for="email">Correo electrónico:</label>
+                                <input type="email" class="form-control"
+                                    placeholder="Ingrese su correo electrónico universitario">
+                            </div>
+                            <div class="form-group py-3">
+                                <label for="email">Código:</label>
+                                <input type="text" class="form-control" placeholder="Ingrese su código universitario">
+                            </div>
+                            <div class="form-group py-3">
+                                <label for="pwd">Contraseña:</label>
+                                <input type="password" class="form-control" placeholder="Ingrese su contraseña">
+                            </div>
+                            <button type="submit" class="btn btn-appsalidas font-weight-bold btn-block">Iniciar
+                                Sesión</button>
+                        </form>
+                        <img src="../images/estudiante.png" class="img-fluid mx-auto d-block my-2" style="width: 50%;">
+                    </div>
+                    <div class="card-footer bg-appsalidas py-4">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-appsalidas">
+                        <h5 class="text-center font-weight-bold">Docente</h5>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-title text-center">Por favor llena tus credenciales.</h6>
+                        <form>
+                            <div class="form-group py-3">
+                                <label for="email">Correo electrónico:</label>
+                                <input type="email" class="form-control"
+                                    placeholder="Ingrese su correo electrónico universitario">
+                            </div>
+                            <div class="form-group py-3">
+                                <label for="email">Código:</label>
+                                <input type="text" class="form-control" placeholder="Ingrese su código universitario">
+                            </div>
+                            <div class="form-group py-3">
+                                <label for="pwd">Contraseña:</label>
+                                <input type="password" class="form-control" placeholder="Ingrese su contraseña">
+                            </div>
+                            <button type="submit" class="btn btn-appsalidas font-weight-bold btn-block">Iniciar
+                                Sesión</button>
+                        </form>
+                        <img src="../images/docente.png" class="img-fluid mx-auto d-block my-2" style="width: 50%;">
+                    </div>
+                    <div class="card-footer bg-appsalidas py-4">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-appsalidas">
+                        <h5 class="text-center font-weight-bold">Director del Programa</h5>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-title text-center">Por favor llena tus credenciales.</h6>
+                        <form>
+                            <div class="form-group py-3">
+                                <label for="email">Correo electrónico:</label>
+                                <input type="email" class="form-control"
+                                    placeholder="Ingrese su correo electrónico universitario">
+                            </div>
+                            <div class="form-group py-3">
+                                <label for="email">Código:</label>
+                                <input type="text" class="form-control" placeholder="Ingrese su código universitario">
+                            </div>
+                            <div class="form-group py-3">
+                                <label for="pwd">Contraseña:</label>
+                                <input type="password" class="form-control" placeholder="Ingrese su contraseña">
+                            </div>
+                            <button type="submit" class="btn btn-appsalidas font-weight-bold btn-block">Iniciar
+                                Sesión</button>
+                        </form>
+                        <img src="../images/director.png" class="img-fluid mx-auto d-block my-2" style="width: 50%;">
+                    </div>
+                    <div class="card-footer bg-appsalidas py-4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pie de página -->
+    <div class="container-fluid my-0 py-4 bg-appsalidas text-white mt-2" style="margin-bottom:0">
+        <div class="col-12 text-center font-weight-bold">
+            2020 © All Rights Reserved. Desarrollado por Andrés Camilo Yáñez Escobar
+        </div>
+    </div>
+
+</body>
+
+</html>

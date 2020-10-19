@@ -1,0 +1,32 @@
+.carousel-inner img {
+    width: 80%;
+    height: 100%;
+}
+
+.content-body {
+    min-height: calc(100vh);
+}
+
+.bg-appsalidas {
+    background-color: #dd4b39;
+    border-color: #d73925;
+    color: white;
+}
+
+.btn-appsalidas {
+    background-color: #ca4634;
+    border-color: #c03421;
+    color: white;
+}
+
+.btn-appsalidas:hover {
+    background-color: white;
+    border-color: #c03421;
+    color: #ca4634;
+}
+.img-fluid{
+    width: 50vh;
+}
+p {
+    line-height: 2;
+}

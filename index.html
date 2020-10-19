@@ -1,13 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Inicio</title>
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Mis estilos -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+    <div class="container-fluid">
+        <div class="row py-3 bg-appsalidas">
+            <div class="col-12 col-sm-12 col-md-4 my-auto">
+                <img class="img-fluid" src="images/portada.png" alt="Chania">
+            </div>
+            <div class="col-12 col-sm-12 col-md-8 my-auto">
+                <h1 class="text-center font-weight-bolder">Programa de Ingeniería de Sistemas</h1>
+                <h6 class="text-center font-weight-bolder">Universidad Francisco de Paula Santander</h6>
+            </div>
+        </div>
+    </div>
+    <!-- Navegador -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">Inicio</a>
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Integrantes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">¿Quiénes somos?</a>
+                </li>
+
+            </ul>
+            <a href="pages/login.html" class="btn btn-appsalidas">Iniciar Sesión</a>
+        </div>
+    </nav>
+    <div class="container-fluid content-body">
+        <div class="row">
+            <div class="col-12 bg-appsalidas">
+                <h2 class="py-2 font-weight-bolder text-center text-white">Aplicación Web Salidas</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6">
+                <div class="container px-0 py-2">
+                    <h2 class="font-weight-bolder text-left text-danger">Introducción</h2>
+                </div>
+                <p class="text-justify font-weight-bold">En el programa de Ingeniería de Sistemas, constantemente se
+                    realizan reuniones o
+                    diferentes tipos de
+                    eventos fuera o dentro de la universidad Francisco de Paula Santander. Reuniones que se hacen de
+                    forma ya sea presencial, o virtual. Por lo que en muchas ocasiones han tenido que lidiar con la
+                    cuestión de saber quiénes son los participantes de su evento. Quién lo lidera, quiénes pueden
+                    participar, o inclusive, por más sencillo que parezca, el hecho de saber siquiera si hay algún
+                    evento del programa o no. Los estudiantes en su mayoría desconocen o les falta información sobre
+                    estos eventos, por lo que no alcanzan a saber cómo inscribirse o a participar en estos.
+                    La publicidad que estos eventos tienen suelen ser por medio de un correo electrónico, una
+                    publicación en Facebook, Twitter o alguna otra red social como Instagram. Y en muchas ocasiones este
+                    no suele tener el impacto que se espera, o la participación por parte de los estudiantes de la
+                    universidad, o estudiantes fuera de la universidad.
+                </p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6">
+                <div class="container px-0 py-2">
+                    <h2 class="font-weight-bolder text-right text-danger">Justificación del Proyecto</h2>
+                </div>
+                <p class="text-justify font-weight-bold">El uso de las nuevas tecnologías podría suplir la necesidad de
+                    la administración
+                    de las actividades o eventos que se realizan en el programa Ingeniería de Sistemas de la Universidad
+                    Francisco de Paula Santander, por medio de una aplicación web que permite gestionar los diferentes
+                    procesos de gestión de estos eventos, y la gestión de las participaciones de los estudiantes o de
+                    los usuarios externos. Estos eventos no siempre son de tipo privado, sino también pueden ser
+                    públicos para que cualquier usuario pueda inscribirse, teniendo en cuenta que tiene un límite de
+                    participantes máximo. Además de suplir con ciertas necesidades que tienen las actividades con
+                    respecto a la exigencia de los documentos necesarios. De esta manera los estudiantes de la
+                    universidad Francisco de Paula Santander o los usuarios externos podrán visualizar los diferentes
+                    eventos que estén disponibles.
+
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-4">
+                <div class="container px-2 py-2">
+                    <h2 class="font-weight-bolder text-left text-danger">Objetivos específicos</h2>
+                </div>
+                <ul class="list-group font-weight-bold">
+                    <li class="list-group-item mb-3 shadow-sm"> Definir los requerimientos funcionales y no funcionales
+                        de la aplicación web.</li>
+                    <li class="list-group-item mb-3 shadow-sm"> Diseñar todas las vistas del cliente de la aplicación.
+                    </li>
+                    <li class="list-group-item mb-3 shadow-sm"> Desarrollar la lógica de la aplicación
+                        aplicación utilizando Laravel 7.</li>
+                    <li class="list-group-item mb-3 shadow-sm"> Crear las migraciones de la base de datos
+                        utilizando el mismo framework de Laravel.</li>
+                    <li class="list-group-item mb-3 shadow-sm"> Crear los seeders y factories para futuras
+                        pruebas de rendimiento de base de datos.</li>
+                    <li class="list-group-item mb-3 shadow-sm"> Realizar pruebas de rendimiento y funcionalidad
+                        de la aplicación.</li>
+                    <li class="list-group-item mb-3 shadow-sm"> Desplegar en el servidor del programa de
+                        Ingeniería de Sistemas.</li>
+                </ul>
+            </div>
+            <div class="col-12 col-sm-12 col-md-8">
+                <div class="container px-2 py-2">
+                    <h2 class="font-weight-bolder text-center text-danger">Objetivos</h2>
+                </div>
+                <p class="text-justify font-weight-bold">Desarrollar una aplicación web para la administración de las
+                    actividades de
+                    salida entrada del programa Ingeniería de Sistemas de la Universidad Francisco de Paula Santander.
+
+                </p>
+                <div class="container px-2 py-2">
+                    <h2 class="font-weight-bolder text-right text-danger">Alcance</h2>
+                </div>
+                <p class="text-justify font-weight-bold">Este proyecto va enfocado para las actividades exclusivamente
+                    del programa
+                    Ingeniería de Sistemas. Pero cualquier estudiante de la universidad o los usuarios externos podrán
+                    participar en las actividades siempre y cuando sean públicas.
+
+                </p>
+                <div class="container px-2 py-2">
+                    <h2 class="font-weight-bolder text-danger">Resultados</h2>
+                </div>
+                <p class="text-justify font-weight-bold">Se espera que con la aplicación la participación de los
+                    estudiantes del programa
+                    de Ingeniería de Sistemas u otros programas pueda aumentar considerablemente, además de que usuarios
+                    externos a la universidad, o sea usuarios invitados puedan estar registrados y puedan asistir a los
+                    diferentes eventos o actividades ya sea de manera presencial o virtual. La participación de los
+                    usuarios dependerá bastante de sí la actividad estará de manera pública, teniendo así un libre
+                    acceso, o de manera privada, teniendo que solicitar la participación o siendo asignado directamente
+                    por el líder de la actividad.
+
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Pie de página -->
+    <div class="container-fluid my-0 py-4 bg-appsalidas text-white mt-2" style="margin-bottom:0">
+        <div class="col-12 text-center font-weight-bold">
+            2020 © All Rights Reserved. Desarrollado por Andrés Camilo Yáñez Escobar
+        </div>
+    </div>
 
 </body>
 
